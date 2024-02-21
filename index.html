@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(10, 10, 49);
+      color: rgb(245, 245, 233);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      width: 100%;
+      background-color: rgb(41, 41, 103);
+    }
+
+    nav ul {
+      margin: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0px 20px;
+      cursor: pointer;
+      font-size: 1.5em;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(167, 167, 246);
+      font-size: 1.2rem;
+    }
+
+    .left {
+      font-size: 2em;
+      margin-left: 5px;
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      margin: 60px;
+      text-align: center;
+    }
+
+    .firstSection div {
+      width: 60%;
+    }
+
+    .firstSection .leftSection {
+      font-size: 30px;
+      text-align: center;
+      margin: 60px 10px 0 0;
+    }
+
+    span {
+      color: rgb(161, 161, 245);
+      font-weight: bold;
+      margin: 10px;
+    }
+
+    .firstSection .leftSection p {
+      font-size: 20px;
+      margin-top: 10px;
+      color: rgb(218, 164, 84);
+    }
+
+    .firstSection .leftSection .app {
+      margin-left: 50px;
+    }
+
+    .app a {
+      display: inline-flex;
+      border-radius: 35%;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      border: 2.5px solid rgb(237, 92, 227);
+      font-size: 30px;
+      /* color: rgb(114, 85, 51); */
+      color: rgb(237, 92, 227);
+      margin: 50px 10px 30px 5px;
+      text-decoration: none;
+
+    }
+
+    .app a:hover {
+      background: rgb(124, 78, 121);
+      color: azure;
+      box-shadow: 0 0 20px rgb(124, 78, 121);
+      border: 2.5px solid rgb(124, 78, 121);
+    }
+
+    .anch a {
+      display: inline block;
+      border: 1px solid rgb(195, 131, 200);
+      background: rgb(195, 131, 191);
+      /* box-shadow: 0 0 1rem rgb(237, 92, 227) ; */
+      border-radius: 3rem;
+      text-decoration: none;
+      color: #f0ebeb;
+      position: absolute;
+      text-align: center;
+      padding: 1rem 2rem;
+      margin: 10px 5px 25px -80px;
+      height: 30px;
+
+    }
+
+    .anch a:hover {
+      background-color: rgb(124, 78, 121);
+      border: 1px solid rgb(124, 78, 121);
+      box-shadow: 0 0 1rem rgb(124, 78, 121);
+    }
+
+
+    .firstSection .rightSection img {
+
+      width: 75%;
+      margin: 0 0;
+      border-radius: 20%;
+
+    }
+
+    .secondSection {
+      max-width: 80vw;
+      margin: auto;
+      height: 80vh;
+    }
+
+    .secondSection h1 {
+      font-size: 2.75rem;
+      color: rgb(240, 177, 99);
+    }
+
+    .secondSection .box {
+      background-color: white;
+      width: 85vw;
+      height: 2px;
+      margin: 90px 0;
+      display: flex;
+    }
+
+    .secondSection .vertical {
+      height: 87px;
+      width: 1px;
+      background-color: white;
+      margin: 0 150px;
+    }
+
+    .image-top {
+      width: 23px;
+      position: relative;
+      top: -32px;
+      left: -9px;
+    }
+
+    .vertical-title {
+      position: relative;
+      top: 65px;
+      width: 150px;
+    }
+
+    .vertical-desc {
+      position: relative;
+      top: 86px;
+      color: grey;
+      width: 150px;
+      font-size: 15px;
+    }
+
+    .thirdSection {
+      max-width: 80vw;
+      margin: auto;
+      height: 80vh;
+    }
+
+    .thirdSection h1 {
+      font-size: 2.75rem;
+      color: rgb(240, 177, 99);
+    }
+
+    .thirdSection .box {
+      background-color: white;
+      width: 75vw;
+      height: 2px;
+      margin: 90px 0;
+      display: flex;
+
+    }
+
+    .thirdSection .vertical {
+      height: 95px;
+      width: 2px;
+      background-color: white;
+      margin: 0 130px;
+    }
+
+    .thirdSection .image-top {
+      width: 23px;
+      position: relative;
+      top: -32px;
+      left: -9px;
+    }
+
+    .fourthSection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 5px 0;
+      height: 85vh;
+    }
+
+    .fourthSection h3 {
+      font-size: 25px;
+      color: rgb(240, 177, 99);
+      width: 80%;
+      display: inline block;
+    }
+
+    .fourthSection div {
+      width: 25%;
+    }
+
+    .fourthSection .leftSection {
+      font-size: 23px;
+    }
+
+    .fourthSection .leftSection span {
+      color: rgb(161, 161, 245);
+      font-weight: bold;
+      margin: 10px;
+    }
+
+    .fourthSection .rightSection img {
+      width: 60%;
+      margin: 10% 0;
+    }
+
+    footer {
+      background-color: rgb(41, 41, 103);
+      color: #fff;
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    .copyright {
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <hr>
+  <header>
+    <nav>
+      <div class="left"><b> Shipra's</b> Portfolio </div>
+
+      <div class="right">
+        <ul>
+          <!-- <li>Home</li>
+          <li>About</li>
+          <li>Skills</li>
+          <li>Projects</li>
+          <li>Contact Me</li> -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <hr>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hello, My name is <br><span>SHIPRA NIGOTIYA</span> <br> I'm a
+        <span>Web Developer.</span>
+        <p>"Passionate web developer dedicated to creating elegant and functional design."</p>
+
+        <div class="app">
+          <!-- use maxicons from google to create logo of app. -->
+          <a href="#"><i class='bx bxl-linkedin'></i></a>
+          <a href="#"><i class='bx bxl-github'></i></a>
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+          <a href="#"><i class='bx bxl-whatsapp'></i></a>
+        </div>
+        <div class="anch">
+          <a href="SHIPRA.pdf" download="">Download CV</a>
+        </div>
+
+      </div>
+
+      <div class="rightSection">
+        <img src="developer pic.jpeg">
+      </div>
+
+    </section>
+
+    <hr>
+    <section class="secondSection">
+      <h1>
+        Education Qualification
+      </h1>
+      <div class="box">
+
+        <div class="vertical">
+          <img class="image-top" src="education icon.jpeg" alt="Loading">
+          <div class="vertical-title">
+            Master Of Computer Application<br />
+            (2022-Till date)
+          </div>
+          <div class="vertical-desc">
+            BABU BANARASI DAS UNIVERSITY <br />LUCKNOW
+          </div>
+        </div>
+
+        <div class="vertical">
+          <img class="image-top" src="education icon.jpeg" alt="Loading">
+          <div class="vertical-title">
+            Bachelor Of Computer Application<br />
+            (2019-2022)
+          </div>
+          <div class="vertical-desc">
+            CHHATRAPATI SAHU JI MAHARAJ UNIVERSITY,KANPUR
+          </div>
+        </div>
+
+        <div class="vertical">
+          <img class="image-top" src="education icon.jpeg" alt="Loading">
+          <div class="vertical-title">
+            INTERMEDIATE<br />
+            (2019)
+          </div>
+          <div class="vertical-desc">
+            CBSE BOARD
+          </div>
+        </div>
+
+
+        <div class="vertical">
+          <img class="image-top" src="education icon.jpeg" alt="Loading">
+          <div class="vertical-title">
+            MATRICULATION <br />
+            (2017)
+          </div>
+          <div class="vertical-desc">
+            CBSE BOARD
+          </div>
+        </div>
+      </div>
+    </section>
+    </hr>
+
+    <hr>
+    <section class="thirdSection">
+      <h1>
+        Certifications
+      </h1>
+      <div class="box">
+        <div class="vertical">
+          <img class="image-top" src="certificate icon.jpeg" alt="">
+          <div class="vertical-title">
+            PYTHON
+          </div>
+          <div class="vertical-desc">
+            Training of 3 months from <br>Palle Technology <br>Bangalore
+          </div>
+        </div>
+
+        <div class="vertical">
+          <img class="image-top" src="certificate icon.jpeg" alt="">
+          <div class="vertical-title">
+            HTML & CSS For Beginners
+          </div>
+          <div class="vertical-desc">
+            Certified by Open Weaver
+          </div>
+        </div>
+
+        <div class="vertical">
+          <img class="image-top" src="certificate icon.jpeg" alt="">
+          <div class="vertical-title">
+            WEBINAR ON CHATGPT
+          </div>
+          <div class="vertical-desc">
+            Certified by Bharti Vidyapeeth's Institute of </br>Computer Application Management,(BVICAM),<br> New Delhi
+          </div>
+        </div>
+
+        <div class="vertical">
+          <img class="image-top" src="certificate icon.jpeg" alt="">
+          <div class="vertical-title">
+            WEBINAR ON GENERATIVE AI
+          </div>
+          <div class="vertical-desc">
+            Certified by Bharti Vidyapeeth's Institute of </br>Computer Application Management,(BVICAM) <br> New Delhi
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    </hr>
+
+    <hr>
+    <section class="fourthSection">
+      <div class="leftSection">
+        <div>
+          <h3>VIRTUAL INTERNSHIP - 1:</h3>
+        </div>
+        Internship done under <span>BHARAT INTERN</span> where I have completed two projects<span>TEMPRATURE CONVERTOR
+          WEBSITE and PORTFOLIO
+          WEBSITE.</span>
+      </div>
+      <div class="rightSection">
+        <img src="Bharat intern offer letter.jpg">
+      </div>
+    </section>
+    </hr>
+
+    <hr>
+    <section class="fourthSection">
+      <div class="leftSection">
+        <div>
+          <h3>VIRTUAL INTERNSHIP - 2:</h3>
+        </div>
+        Internship done under <span>OASIS INFOBYTE</span> where I have completed one project<span>LANDING PAGE
+          WEBSITE.</span>
+      </div>
+      <div class="rightSection">
+        <img src="oasis Infobyte offer letter.jpg">
+      </div>
+    </section>
+    </hr>
+
+    <hr>
+    <section class="fourthSection">
+      <div class="leftSection">
+        <div>
+          <h3>VIRTUAL INTERNSHIP - 3:</h3>
+        </div>
+        Internship done under <span>CODSOFT</span> <br>During this internship , I do all the assigned task and This
+        internship is
+        an educational opportunity for me and focuses on learning and
+        developing new skill.
+
+      </div>
+      <div class="rightSection">
+        <img src="codsoft offer letter.jpg">
+      </div>
+    </section>
+    </hr>
+    <footer>
+      <div class="copyright">
+        &copy; 2024 Shipra Portfolio. All rights reserved.
+      </div>
+    </footer>
+
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Skills</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(10, 10, 49);
+            color: rgb(245, 245, 233);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            width: 100%;
+            background-color: rgb(41, 41, 103);
+        }
+
+        nav ul {
+            margin: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 20px;
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(167, 167, 246);
+            font-size: 1.2rem;
+        }
+
+        .left {
+            font-size: 2em;
+            margin-left: 5px;
+        }
+
+        span {
+            color: rgb(161, 161, 245);
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .skills {
+            min-height: auto;
+            padding-bottom: 7rem;
+            background: rgb(10, 10, 49);
+            align-items: center;
+
+        }
+
+        .skills h2 {
+            text-align: center;
+            font-size: 2.75rem;
+            margin: 10px;
+            margin-left: -65px;
+        }
+
+        .skills .skill-row {
+            display: flex;
+            /* flex-wrap: wrap; */
+            gap: 5rem;
+            justify-content: space-between;
+        }
+
+        .skills .skill-column {
+            flex: 1 1 40rem;
+        }
+
+        .skill-column .title {
+            font-size: 2rem;
+            margin: 0 0 1.5rem;
+        }
+
+        .skill-box .skill-content {
+            position: relative;
+            border-radius: .5rem;
+            border: .2rem solid rgb(195, 131, 191);
+            padding: .5rem 1rem;
+            margin: 0 15px;
+            flex-basis: calc(33.33% - 20px);
+        }
+
+        .skill-content .progress {
+            padding: 0.2rem;
+        }
+
+        .skill-content .progress h3 {
+            font-size: 1.25rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skill-content .progress h3 span {
+            color: azure;
+        }
+
+        .skill-content .progress .bar {
+            height:100%;
+            border-radius: 1rem;
+            border: .2rem solid rgb(195, 131, 191);
+            padding: .25rem; 
+            margin: 1rem 0;
+            transition:width 0.5s;
+        }
+
+        .skill-content .progress .bar span {
+            display: block;
+            height: 100%;
+            border-radius: .3rem;
+            background: rgb(195, 131, 191);
+            /* transition:width 0.5s; */
+        }
+
+        .skill-column:nth-child(1) .skill-content .progress:nth-child(1) .bar span {
+            width: 85%;
+        }
+
+        .skill-column:nth-child(1) .skill-content .progress:nth-child(2) .bar span {
+            width: 80%;
+        }
+
+        .skill-column:nth-child(1) .skill-content .progress:nth-child(3) .bar span {
+            width: 75%;
+        }
+
+        .skill-column:nth-child(1) .skill-content .progress:nth-child(4) .bar span {
+            width: 75%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><b> Shipra's</b> Portfolio </div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="skills">
+            <h2 class="heading">My <span>Skills</span></h2>
+            <div class="skill-row">
+                <div class="skill-column">
+                    <h4 class="title">Coding Skills</h4>
+
+                    <div class="skill-box ">
+                        <div class="skill-content">
+
+                            <div class="progress">
+                                <h3> HTML <span>85%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3> CSS<span>80%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3> JavaScript<span>75%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3> Python<span>75%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-column">
+                    <h4 class="title">Professsional Skills</h4>
+
+                    <div class="skill-box ">
+                        <div class="skill-content">
+
+                            <div class="progress">
+                                <h3> Quick Learner <span>85%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3> Collaborator<span>80%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3> Carrer Oriented<span>95%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3> Punctuality<span>85%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </main>
+</body>
+
+</html>

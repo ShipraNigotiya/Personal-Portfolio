@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title> Contact Me</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(10, 10, 49);
+            color: rgb(245, 245, 233);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            width: 100%;
+            background-color: rgb(41, 41, 103);
+        }
+
+        nav ul {
+            margin: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 20px;
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(167, 167, 246);
+            font-size: 1.2rem;
+        }
+
+        .left {
+            font-size: 2em;
+            margin-left: 5px;
+        }
+
+        span {
+            color: rgb(161, 161, 245);
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .contact h1 {
+            margin: 25px;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .contact form {
+            text-align: center;
+            margin-bottom: 50px;
+            max-width: 60%;
+            margin: 10px auto;
+
+        }
+
+        .contact form .inputbox {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        /* .inputbox div{
+            display: flex;
+        } */
+
+        .contact form .input-box input,
+        .contact form textarea {
+            width: 100%;
+            padding: 1.01rem;
+            margin: .7rem 0;
+            font-size: 1rem;
+            background: rgb(195, 157, 195);
+            color: rgb(18, 33, 54);
+            border-radius: 20px;
+        }
+
+        .contact form textarea {
+            resize: none;
+        }
+
+        .contact form .input-box input {
+            width: 40%;
+            padding: 15px;
+            margin-right: 25px;
+            
+        }
+
+        /* .contact form .btn {
+            margin-top: 2rem;
+            cursor: pointer;
+        } */
+
+        .btn {
+            display: inline block;
+            border: 1px solid rgb(161, 161, 245);
+            background:rgb(161, 161, 245);
+            /* box-shadow: 0 0 1rem rgb(237, 92, 227) ; */
+            border-radius: 3rem;
+            text-decoration: none;
+            color: #f0ebeb;
+            position: absolute;
+            text-align: center;
+            padding: 1rem 2rem;
+            margin: 35px 15px 25px -90px;
+            height: 25px;
+            cursor: pointer;
+            height: 75px;
+            width:20%;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(124, 78, 121);
+            border: 1px solid rgb(124, 78, 121);
+            box-shadow: 0 0 1rem #7c4e79;
+        }
+
+        .input-box input placeholder{
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <header>
+        <nav>
+            <div class="left"><b> Shipra's</b> Portfolio </div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contact">
+        <h1 class="heading">Contact <span>Me!</span> </h1>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Signature">
+            </div>
+            <textarea name="" id="" cols="30" rows="5" placeholder="Your Message "></textarea>
+            <input type="Submit" value="Send Message" class="btn">
+        </form>
+    </div>
+</body>
+
+</html>
